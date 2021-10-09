@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8f800e7-da8f-414a-8205-2a097af7e6cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/base/hello.lua" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/hello.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/script.lua" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/script.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/structure.lua" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/structure.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/src/variable.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/src/structure.lua" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/structure.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="NewLua" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +48,7 @@
       <recent name="$PROJECT_DIR$/base/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Lua Application.variable.lua">
     <configuration name="hello.lua" type="lua.app" factoryName="Lua Application" temporary="true">
       <option name="program" value="/usr/local/bin/lua" />
       <option name="file" value="$PROJECT_DIR$/base/src/hello.lua" />
@@ -52,8 +59,35 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
+    <configuration name="structure.lua" type="lua.app" factoryName="Lua Application" temporary="true">
+      <option name="program" value="/usr/local/bin/lua" />
+      <option name="file" value="$PROJECT_DIR$/base/src/structure.lua" />
+      <option name="workingDir" value="$PROJECT_DIR$/base/src" />
+      <option name="debuggerType" value="2" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="variable.lua" type="lua.app" factoryName="Lua Application" temporary="true">
+      <option name="program" value="/usr/local/bin/lua" />
+      <option name="file" value="$PROJECT_DIR$/base/src/variable.lua" />
+      <option name="workingDir" value="$PROJECT_DIR$/base/src" />
+      <option name="debuggerType" value="2" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Lua Application.hello.lua" />
+      <item itemvalue="Lua Application.structure.lua" />
+      <item itemvalue="Lua Application.variable.lua" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Lua Application.variable.lua" />
+        <item itemvalue="Lua Application.structure.lua" />
         <item itemvalue="Lua Application.hello.lua" />
       </list>
     </recent_temporary>
@@ -69,7 +103,7 @@
       <workItem from="1633339829998" duration="234000" />
       <workItem from="1633751079776" duration="112000" />
       <workItem from="1633751225931" duration="184000" />
-      <workItem from="1633751491135" duration="413000" />
+      <workItem from="1633751491135" duration="2388000" />
     </task>
     <servers />
   </component>

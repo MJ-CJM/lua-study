@@ -14,7 +14,7 @@
 --print(type(type(X)))
 
 -- 用 nil 删除
-tab1 = { key1 = "val1", key2 = "val2", "test", "val3", "val4" }
+tab1 = { key1 = "val1", key2 = "val2", "test", "val3", key3 = "val9", "val6"}
 for k, v in pairs(tab1) do
     print(k .. " - " .. v)
 end
@@ -27,3 +27,122 @@ end
 -- 与 nil 做比较要加 ""
 print(type(x) == nil)
 print(type(x) == "nil")
+
+-- 布尔类型
+print("布尔类型")
+print(type(true))
+print(type(false))
+print(type(nil))
+
+if false or nil then
+    print("至少有一个是 true")
+else
+    print("false 和 nil 都为 false")
+end
+
+if 0 then
+    print("0 是 true")
+else
+    print("0 是 false")
+end
+
+-- number
+print("数字")
+print(type(2))
+print(type(2.2))
+print(type(0.2))
+print(type(2e+1))
+print(type(0.2e-1))
+print(type(7.8263692594256e-06))
+
+-- string（字符串）
+-- 字符串表示方式 3 种
+print("string 字符串")
+string1 = "this is string1"
+string2 = 'this is string2'
+html = [[
+<html>
+<head></head>
+<body>
+    <a href="http://www.runoob.com/">菜鸟教程</a>
+</body>
+</html>
+]]
+-- 相加
+print("2" + 6)
+print("2" + "6")
+print("2 + 6")
+-- 拼接
+print("a" .. 'b')
+print(157 .. 428)
+-- 计算长度
+len = "www.runoob.com"
+print(#len)
+print(#"www.runoob.com")
+
+-- 表
+print("表")
+-- 创建一个空的 table
+local tbl1 = {}
+
+-- 直接初始表
+local tbl2 = {"apple", "pear", "orange", "grape"}
+print(tbl2[0])
+print(tbl2[3])
+print(tbl2[6])
+
+-- table_test.lua 脚本文件
+a = {}
+a["key"] = "value"
+key = 10
+a[key] = 22
+a[key] = a[key] + 11
+for k, v in pairs(a) do
+    print(k .. " : " .. v)
+end
+
+-- table_test2.lua 脚本文件
+-- 不同于其他语言的数组把 0 作为数组的初始索引，在 Lua 里表的默认初始索引一般以 1 开始。
+local tbl = {"apple", "pear", "orange", "grape"}
+for key, val in pairs(tbl) do
+    print("Key", key)
+end
+
+-- table_test3.lua 脚本文件
+a3 = {}
+for i = 1, 10 do
+    a3[i] = i
+end
+a3["key"] = "val"
+print(a3["key"])
+print(a3["none"])
+
+-- 函数
+print("函数")
+-- function_test.lua 脚本文件
+function factorial1(n)
+    if n == 0 then
+        return 1
+    else
+        return n * factorial1(n - 1)
+    end
+end
+print(factorial1(5))
+factorial2 = factorial1
+print(factorial2(5))
+
+-- 匿名函数
+print("匿名函数")
+function testFun(tab,fun)
+    for k ,v in pairs(tab) do
+        print(fun(k,v));
+    end
+end
+
+
+tab={key1="val1",key2="val2"};
+testFun(tab,
+        function(key,val)--匿名函数
+            return key.."="..val;
+        end
+);
